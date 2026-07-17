@@ -1,0 +1,19 @@
+{
+  "name": "@nexus/indexer",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun --watch --env-file=../../.env src/index.ts",
+    "start": "bun --env-file=../../.env src/index.ts"
+  },
+  "dependencies": {
+    "@nexus/db": "workspace:*",
+    "@solana/web3.js": "^1.91.8",
+    "drizzle-orm": "^0.30.9",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24"
+  }
+}
