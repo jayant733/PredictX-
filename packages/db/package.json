@@ -1,0 +1,23 @@
+{
+  "name": "@nexus/db",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg",
+    "setup": "bun run src/setup.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.30.9",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.17",
+    "@types/pg": "^8.11.5",
+    "typescript": "^5.3.3",
+    "dotenv": "^16.4.5"
+  }
+}
