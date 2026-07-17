@@ -1,0 +1,14 @@
+.portfolio-glass-card {
+    background: rgba(22, 24, 29, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(132, 148, 149, 0.2);
+}
+.portfolio-neon-glow {
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+.portfolio-neon-border {
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);
+}
+.portfolio-chart-gradient {
+    background: linear-gradient(180deg, rgba(78, 222, 163, 0.1) 0%, rgba(78, 222, 163, 0) 100%);
+}

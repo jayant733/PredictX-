@@ -1,0 +1,58 @@
+body {
+    background-color: #0A0B0D;
+    /* We don't want overflow: hidden on the body globally, so we'll scope it to the login container */
+}
+
+.login-container {
+    overflow: hidden;
+}
+
+.login-glass-panel {
+    background: rgba(22, 24, 29, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(0, 242, 255, 0.05);
+}
+
+.login-neon-glow {
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+.login-grid-background {
+    background-image: linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(circle at center, black, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
+}
+
+.login-scanline {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(0, 242, 255, 0.2), transparent);
+    position: absolute;
+    top: -10px;
+    animation: scan 4s linear infinite;
+}
+
+@keyframes scan {
+    0% { top: -10% }
+    100% { top: 110% }
+}
+
+.phantom-btn { background: #AB9FF2; color: #121315; }
+.backpack-btn { background: #E44332; color: #ffffff; }
+
+.loading-ring {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 242, 255, 0.1);
+    border-top: 2px solid #00f2ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

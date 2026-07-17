@@ -1,0 +1,28 @@
+.market-detail-container {
+    overflow-x: hidden;
+}
+
+.market-detail-metallic-border {
+    border: 1px solid transparent;
+    background: linear-gradient(#121315, #121315) padding-box,
+                linear-gradient(135deg, #849495 0%, #3a494b 100%) border-box;
+}
+
+.market-detail-neon-glow-cyan {
+    box-shadow: 0 0 15px rgba(0, 219, 231, 0.15);
+}
+
+.market-detail-custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+.market-detail-custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+.market-detail-custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #343537;
+    border-radius: 10px;
+}
+
+.market-detail-chart-gradient {
+    background: linear-gradient(180deg, rgba(0, 242, 255, 0.1) 0%, rgba(0, 242, 255, 0) 100%);
+}
