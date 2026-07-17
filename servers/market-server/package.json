@@ -1,0 +1,23 @@
+{
+  "name": "@autonomous-traders/market-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Home-made MCP server: free market data (Yahoo Finance) for the trading simulation. Used when no Polygon API key is set.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": { "market-server": "./dist/index.js" },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch --preserveWatchOutput",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist .tsbuildinfo"
+  },
+  "dependencies": {
+    "@autonomous-traders/shared": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.23.5"
+  }
+}
