@@ -1,0 +1,22 @@
+{
+  "name": "nexus-prediction-market",
+  "private": true,
+  "packageManager": "bun@1.2.21",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "servers/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "bun run --cwd packages/db setup && turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^1.13.0",
+    "typescript": "^5.3.3"
+  }
+}
+

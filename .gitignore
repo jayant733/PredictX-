@@ -1,0 +1,10 @@
+node_modules
+.turbo
+dist
+build
+.env
+.env.local
+.DS_Store
+.agents
+scratch
+*.log
